@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Program-7</title>
+    </head>
+
+    <body>
+        <h1>Course Enrollment Form for Students</h1>
+        <form method="post" action="">
+            {% csrf_token %}
+            Select student name:&emsp;
+            <select name="sname" required>
+                <option value="">Select a Student</option>
+                {% for stud in students %}
+                    <option value={{stud.id}}>{{stud.student_name}}</option>
+                {% endfor %}
+            </select>
+            <br/><br/>
+            Select course name:&emsp;
+            <select name="cname" required>
+                <option value="">Select a Course</option>
+                {% for course in courses %}
+                    <option value={{course.id}}>{{course.course_name}}</option>
+                {% endfor %}
+            </select>
+            <br/><br/>
+            <input type="submit" value="Enroll" />
+        </form>
+    </body>
+</html>

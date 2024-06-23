@@ -1,0 +1,47 @@
+python -m venv venv5
+source venv5/bin/activate
+pip install django
+django-admin startpoject project5
+cd project5/
+python manage.py startapp app5
+
+// Write all codes
+
+python manage.py makemigrations
+python manage.py migrate
+
+python manage.py shell
+from app5.models import Course
+Course.objects.all()
+Course.objects.all().values()
+
+course1 = Course(course_code='21CS61', course_name='Software Engineering', course_credits='3')
+course2 = Course(course_code='21CS62', course_name='Full Stack Development', course_credits='4')
+course3 = Course(course_code='21CS63', course_name='Computer Graphics', course_credits='3')
+course4 = Course(course_code='21CS644', course_name='Data Science and Visualization', course_credits='3')
+
+courseList = [course1, course2, course3, course4, course5]
+
+for d in courseList:
+	d.save()
+
+Course.objects.all().values()
+
+
+from app5.models import Student
+student1=Student(student_usn="1CR21CS506", student_name="abcd", student_sem="6")
+student2=Student(student_usn="1CR21CS507", student_name="efgh", student_sem="6")
+
+studentList=[student1, student2]
+
+for d in studentList:
+	d.save()
+
+Student.objects.all().values()
+
+quit
+
+
+
+
+
