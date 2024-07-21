@@ -1,0 +1,26 @@
+Develop example Django app that performs CSV and PDF generation for any models created in previous laboratory component.
+
+python -m venv venv9
+source venv9/bin/activate 
+pip install django
+django-admin startproject project9
+cd project9
+python manage.py startapp app9
+pip install reportlab
+
+Write codes in:
+admin.py
+models.py
+views.py
+settings.py -> INSTALLED_APP
+urls.py
+
+python manage.py makemigrations
+python manage.py migrate
+
+python manage.py createsuperuser
+python manage.py runserver
+
+http://127.0.0.1:8000/admin
+http://127.0.0.1:8000/generatecsv
+http://127.0.0.1:8000/generatepdf
