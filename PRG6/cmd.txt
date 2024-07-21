@@ -1,0 +1,22 @@
+For student and course models created in Lab experiment for Module2, register admin
+interfaces, perform migrations and illustrate data entry through admin forms.
+
+python -m venv venv6
+source venv6/bin/activate
+pip install Django
+django-admin startproject project6
+cd project6
+python manage.py startapp app6
+python manage.py runserver
+
+Write codes in:
+models.py
+admin.py
+settings.py -> INSTALLED_APPS
+
+python manage.py makemigrations
+python manage.py migrate
+python manage.py createsuperuser
+python manage.py runserver
+
+http://127.0.0.1:8000/admin
