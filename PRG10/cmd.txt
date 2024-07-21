@@ -1,0 +1,27 @@
+Develop a registration page for student enrolment as done in Module 2 but without page refresh using AJAX.
+
+python -m venv venv10
+source venv10/bin/activate 
+pip install django
+django-admin startproject project10
+cd project10
+python manage.py startapp app10
+
+Write codes in:
+admin.py
+models.py
+settings.py -> INSTALLED_APPS 
+views.py
+templates --> student_registration.html, studentlist.html
+urls.py
+
+
+python manage.py makemigrations
+python manage.py migrate
+python manage.py createsuperuser 
+python manage.py runserver
+
+goto admin add a course
+then goto
+http://127.0.0.1:8000/registerajax/
+http://127.0.0.1:8000/studentsajax/
