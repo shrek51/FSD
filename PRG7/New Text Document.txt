@@ -1,0 +1,12 @@
+Develop a Model form for student that contains his topic chosen for project, languages used and duration with a model called project.
+
+python -m venv venv7
+source venv7/bin/activate 
+pip install django
+django-admin startproject project7
+cd project7
+python manage.py startapp app7
+python manage.py runserver
+
+Write codes in:
+

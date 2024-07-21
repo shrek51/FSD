@@ -1,0 +1,38 @@
+Develop a Model form for student that contains his topic chosen for project, languages used and duration with a model called project.
+
+python -m venv venv7
+source venv7/bin/activate 
+pip install django
+django-admin startproject project7
+cd project7
+python manage.py startapp app7
+
+
+Write codes in:
+models.py
+views.py
+templates/add_project.html
+setting.py -> INSTALLED_APPS
+urls.py
+
+python manage.py makemigrations
+python manage.py migrate
+
+to check
+python manage.py runserver
+
+python manage.py shell
+
+from app7.models import Student
+student1=Student(student_usn="1CR21CS506", student_name="abcd", student_sem="6")
+student2=Student(student_usn="1CR21CS507", student_name="efgh", student_sem="6")
+studentList=[student1, student2]
+
+for d in studentList:
+   ...:     d.save()
+
+Student.objects.all().values()
+
+quit
+
+python manage.py runserver
