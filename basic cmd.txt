@@ -1,6 +1,6 @@
 python -m venv venv1
 source venv1/bin/activate
-pip install Django
+pip install django
 django-admin startproject project1
 cd project1
 python manage.py startapp app1

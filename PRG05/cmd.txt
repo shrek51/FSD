@@ -20,7 +20,7 @@ course2 = Course(course_code='21CS62', course_name='Full Stack Development', cou
 course3 = Course(course_code='21CS63', course_name='Computer Graphics', course_credits='3')
 course4 = Course(course_code='21CS644', course_name='Data Science and Visualization', course_credits='3')
 
-courseList = [course1, course2, course3, course4, course5]
+courseList = [course1, course2, course3, course4]
 
 for d in courseList:
 	d.save()
