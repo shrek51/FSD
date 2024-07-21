@@ -1,0 +1,24 @@
+Develop a search application in Django using AJAX that displays courses enrolled by a student being searched. 
+
+python -m venv venv11
+source venv11/bin/activate 
+pip install django
+django-admin startproject project11
+cd project11
+python manage.py startapp app11
+
+Write codes in:
+models.py
+settings.py -> INSTALLED_APPS 
+admin.py
+views.py
+templates --> course_search_ajax.html, selected_students_ajax.html 
+urls.py
+
+python manage.py makemigrations
+python manage.py migrate
+python manage.py createsuperuser 
+python manage.py runserver
+
+http://127.0.0.1:8000/admin/
+http://127.0.0.1:8000/course_search_ajax/
