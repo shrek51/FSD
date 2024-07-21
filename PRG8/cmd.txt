@@ -1,0 +1,25 @@
+For students enrolment developed in Module 2, create a generic class view which displays list of students and detailview that displays student details for any selected student in the list.
+
+python -m venv venv8
+source venv8/bin/activate 
+pip install django
+django-admin startproject project8
+cd project8
+python manage.py startapp app8
+
+
+Write codes in:
+admin.py
+models.py
+views.py
+settings.py -> INSTALLED_APPS
+urls.py
+
+python manage.py makemigrations
+python manage.py migrate
+
+python manage.py createsuperuser
+python manage.py runserver
+
+http://127.0.0.1:8000/admin
+http://127.0.0.1:8000/student_list/
